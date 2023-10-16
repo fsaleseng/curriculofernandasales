@@ -1,0 +1,177 @@
+/* global css */
+*{
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* body css */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, rgba(255, 0, 157, 0.399) 1%, black, rgb(79, 12, 128) );
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: calc(100vh - 4rem);
+    text-shadow: 1px 1px 1px #111111;
+    border-radius: 50px;
+    border: 2px solid rgb(41, 164, 164);
+    overflow: hidden;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 2rem;
+}
+
+
+/* header css */
+.photo img{
+    border-radius: 50%;
+    border: 2px solid rgb(41, 164, 164);
+    height: 120px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+    top: 2em;
+    position: sticky;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .header {
+        .informations h2 {
+            font-size: 15px; 
+          }
+        .informations p{
+            font-size: 12px;
+        }
+        .photo img{
+            height: 100px;
+        }
+    }
+  }
+
+#photo{
+    float: left;
+}
+
+#informations{
+    float: right;
+}
+
+/* main css */
+.content{
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    height: 100%;
+    overflow-y: scroll; 
+}
+
+/* Estilizar a barra de rolagem para navegadores baseados no motor Blink (Chrome, Edge) */
+.content::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem vertical */
+  }
+  
+  .content::-webkit-scrollbar-thumb {
+    background-color: rgb(41, 164, 164); /* Cor do polegar da barra de rolagem */
+    border-radius: 10px; /* Raio das bordas do polegar */
+  }
+  
+  .content::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do polegar da barra de rolagem quando passa o mouse sobre ele */
+  }
+  
+  .content::-webkit-scrollbar-track {
+    background: #2b0540; /* Cor da faixa da barra de rolagem */
+  }
+
+.itens{
+    list-style: none;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: rgb(41, 164, 164);
+    color: black;
+}
+
+main{
+    width: 80%;
+}
+.button{
+    background-color: transparent;
+    width: 100%;
+    margin: 1em 0 1em 0;
+    border: 2px solid rgb(41, 164, 164);
+    border-radius: 20px;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*abstract css*/
+#abstract{
+    text-align: justify;
+}
+
+.button-abstract{
+    background-color: rgb(41, 164, 164);
+    color: black; 
+}
+
+/*academics css*/
+#academics{
+    text-align: justify;
+}
+
+.button-academics{
+    background-color: rgb(41, 164, 164);
+    color: black; 
+}
+
+/*experiences css*/
+#experiences{
+    text-align: justify;
+}
+
+.button-experiences{
+    background-color: rgb(41, 164, 164);
+    color: black; 
+}
+
+/*courses css*/
+#courses{
+    text-align: justify;
+}
+
+.button-courses{
+    background-color: rgb(41, 164, 164);
+    color: black; 
+}
+
+/*languages css*/
+#languages{
+    text-align: justify;
+}
+
+.button-languages{
+    background-color: rgb(41, 164, 164);
+    color: black; 
+}
+
+
+
